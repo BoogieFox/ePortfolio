@@ -513,30 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.snap-y {
-  scroll-snap-type: y var(--tw-scroll-snap-strictness);
-}
-
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
-.snap-start {
-  scroll-snap-align: start;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 
 .container-snap::-webkit-scrollbar {
