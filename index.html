@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="snap-y snap-mandatory h-screen container-snap overflow-scroll scroll-smooth">
 <head>
   <meta charset="utf-8">
   <title>ePortfolio | Armando Lopes De Sousa</title>
@@ -8,7 +8,7 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div class="contenuPage snap-y snap-mandatory h-screen container-snap scroll-smooth">
+  <div class="contenuPage ">
     <div id="home"></div>
     <div class="header snap-start">
       <p class="titre font">Armando Lopes De Sousa</p>
@@ -42,21 +42,24 @@
       </div>
       
 
-      <div id="about" class=" snap-start"></div>
+      <div id="about" class="snap-start"></div>
       <p class="categorie font texte">À PROPOS DE MOI</p> 
       <div class="about reveal">
         <img class="containerImageIUT" src="IUT.jpg" alt="Image de l'IUT de Paris - Rives de Seine !">
         <p class="texte font ">TEST</p>
-        <div class="texte font snap-start">
-          <p class="categorie font texte">MES COMPÉTENCES</p> 
-          <p id="textHTML">TEST 2</p>
-          <p id="textCSS">TEST 2</p>
-          <p id="textPHP">TEST 2</p>
-          <p id="textJAVA">TEST 2</p>
-          <p id="textC">TEST 2</p>
-          <p id="textCPlusPlus">TEST 2</p>
-          <p id="textVB">TEST 2</p>
-          <p id="textSQL">TEST 2</p>
+      </div>
+      <div id="about" class="snap-start"></div>
+      <p id="snaps" class="categorie font texte">MES COMPÉTENCES</p> 
+      <div class="about reveal">
+        <div class="texte font comp">
+          <p id="textHTML">Création de plusieurs sites : ePortfolio, refonte d'un site départemental</p>
+          <p id="textCSS">Utilisation de frameworks CSS comme Tailwind</p>
+          <p id="textPHP">PHP : création de pages de connexion, inscription pour un projet</p>
+          <p id="textJAVA">Java : méthodes SOLID, interfaces, etc</p>
+          <p id="textC">Création d'applications : gestionnaire de joueuses, ...</p>
+          <p id="textCPlusPlus">Création d'applications : démineur, ...</p>
+          <p id="textVB">Création d'applications : démineur, ...</p>
+          <p id="textSQL">Requêtes SQL, création de bases de données, etc</p>
         </div>
         <div class="skills" id="skills">
           <img class="containerSkills" id="imgHTML" src="html.png" title="HTML 5">
@@ -72,10 +75,10 @@
       
       <div id="projects"></div>
       <p class="categorie font texte">MES PROJETS</p> 
-      <div class="projects reveal snap-start">
+      <div class="projects snap-center">
         <a class="img_wrap" href=""><figure>
           <img class="containerImage" src="6-qui-prend.jpg" alt="Image du 6 qui prend !">
-          <p class="img_description">THIS IMAGE</p>
+          <p class="img_description">Jeu dans lequel plusieurs joueurs s'affrontent</p>
           <figcaption>6 qui prend ! en Java</figcaption>
         </figure></a>
         <a class="img_wrap" href=""><figure>
@@ -114,7 +117,6 @@
           <figcaption>6 qui prend ! en Java</figcaption>
         </figure></a>
       </div>
-      
     </div>
   </div>
 </body>

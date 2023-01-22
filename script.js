@@ -1,4 +1,4 @@
-var num=50;
+var num=100;
 
 $(document).ready(function () {
 
@@ -76,13 +76,7 @@ $(document).ready(function () {
     };
 
     function reveal() {
-    console.log("CIIC");
-        if ($(window).scrollTop() > num) {
-            console.log("CIIC1");
-            $('.menu').addClass('fixed');
-        } else {
-            $('.menu').removeClass('fixed');
-        }
+
     var reveals = document.querySelectorAll(".reveal");
 
     for (var i = 0; i < reveals.length; i++) {
