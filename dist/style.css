@@ -750,8 +750,8 @@ figcaption {
 }
 
 .containerImageIUT {
-  max-height: 75%;
-  max-width: 75%;
+  max-height: 70%;
+  max-width: 70%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -763,8 +763,8 @@ figcaption {
   text-align: center;
   font-size: xx-large;
   font-weight: bold;
-  margin-top: 10%;
   padding-bottom: 2%;
+  padding-top: 10%;
 }
 
 .reveal {
