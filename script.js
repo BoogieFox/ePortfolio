@@ -54,30 +54,16 @@ $(document).ready(function () {
             $("#textSQL").removeClass('bold');
         });
 
-    let section = document.querySelectorAll("section");
-    let menu = document.querySelectorAll("nav a");
+    window.addEventListener("scroll", reveal);
 
-    window.onscroll = () => {
-    section.forEach((i) => {
-        let top = window.scrollY;
-        let offset = i.offsetTop - 150;
-        let height = i.offsetHeight;
-        let id = i.getAttribute("id");
+    // To check the scroll position on page load
+    reveal();
 
-        if (top >= offset && top < offset + height) {
-        menu.forEach((link) => {
-            link.classList.remove("active");
-            document
-            .querySelector("nav a[href*=" + id + "]")
-            .classList.add("active");
-        });
-        }
-    });
-    };
+});
 
-    function reveal() {
-
+function reveal() {
     var reveals = document.querySelectorAll(".reveal");
+    var boutons = document.querySelectorAll(".menu a");
 
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
@@ -85,19 +71,11 @@ $(document).ready(function () {
         var elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
+            reveals[i].classList.add("active");
+            boutons.forEach(element => element.classList.remove("active"));
+            boutons[i].classList.add("active");
         } else {
-        reveals[i].classList.remove("active");
+            reveals[i].classList.remove("active");
         }
     }
-    }
-
-    window.addEventListener("scroll", reveal);
-
-    // To check the scroll position on page load
-    reveal();
-
-
-
-});
-
+    };
