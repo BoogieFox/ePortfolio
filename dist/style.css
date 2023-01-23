@@ -895,3 +895,82 @@ figcaption {
     margin-top: 10%;
   }
 }
+
+@media all and (max-width: 700px) {
+  .home {
+    padding-top: 20%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    padding-bottom: 20%;
+  }
+
+  .cv {
+    scroll-snap-align: end;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin-top: 20%;
+  }
+
+  .menu a {
+    transition: 2s all ease;
+    font-size: small;
+  }
+
+  .skills {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5%;
+    scroll-snap-align: none;
+  }
+
+  .img_wrap {
+    scroll-snap-align: center;
+  }
+
+  #armando{
+    margin-top: 100%;
+    padding-top: 25%;
+    padding-bottom: 20%;
+    font-size: 100% !important;
+    scroll-snap-align: start;
+  }
+
+  .skills {
+    transition: 2s all ease;
+    display: none;
+  }
+
+  #projects {
+    padding-bottom: 10%;
+  }
+
+  .containerImageIUT {
+    max-width: 90vw;
+    max-height: 90vh;
+    max-width: 50%;
+    justify-self: center;
+  }
+
+  #texteImage {
+    margin-top: 10%;
+  }
+
+  #texteSkills {
+    font-size: 100% !important;
+    padding-top: 15%;
+  }
+}
