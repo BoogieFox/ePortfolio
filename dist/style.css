@@ -767,7 +767,7 @@ figcaption {
 .bold {
   font-weight: bold;
   transition: opacity .2s, visibility .2s;
-  color:rgba(4,170,109);
+  color:rgb(132, 235, 197);
 }
 
 .containerImageIUT {
