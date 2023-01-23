@@ -816,7 +816,6 @@ figcaption {
 
 @media all and (max-width: 954px) {
   .texte {
-    color:yellow;
     font-size: 120% !important;
     transition: 2s all ease;
   }
@@ -879,5 +878,20 @@ figcaption {
   .skills {
     transition: 2s all ease;
     display: none;
+  }
+
+  #projects {
+    padding-bottom: 10%;
+  }
+
+  .containerImageIUT {
+    max-width: 90vw;
+    max-height: 90vh;
+    max-width: 50%;
+    justify-self: center;
+  }
+
+  #texteImage {
+    margin-top: 10%;
   }
 }
