@@ -560,6 +560,10 @@ html,body{
   scroll-behavior: smooth;
 }
 
+p {
+  text-align : justify;
+}
+
 .contenuPage {
   width:100%;
   display: block;
@@ -583,6 +587,7 @@ html,body{
 
 .texte {
   color:#273043;
+  transition: 2s all ease;
 }
 
 .home > p {
@@ -648,6 +653,7 @@ html,body{
   grid-template-columns: 3fr 1fr;
   margin-bottom: 5%;
   padding-left: 2%;
+  margin-top: 2%;
 }
 
 .containerImage {
@@ -728,6 +734,7 @@ img {
   grid-gap: 15px;
   margin-right: 20px;
   margin-top: 25%;
+  transition: 2s all ease;
 }
 
 .containerSkills {
@@ -810,6 +817,8 @@ figcaption {
 @media all and (max-width: 954px) {
   .texte {
     color:yellow;
+    font-size: 120% !important;
+    transition: 2s all ease;
   }
 
   .home {
@@ -865,5 +874,10 @@ figcaption {
   #armando{
     scroll-snap-align: center;
     margin-top: 100%;
+  }
+
+  .skills {
+    transition: 2s all ease;
+    display: none;
   }
 }
