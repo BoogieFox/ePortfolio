@@ -529,10 +529,6 @@ video {
   scroll-snap-align: start;
 }
 
-.snap-center {
-  scroll-snap-align: center;
-}
-
 .overflow-scroll {
   overflow: scroll;
 }
@@ -591,12 +587,14 @@ html,body{
   color: white;
   font-size: 250%;
   padding-left: 5%;
+  transition: 2s all ease;
 }
 
 .sous-titre {
   color:#04AA6D;
   font-size: 200%;
   padding-left: 10%;
+  transition: 2s all ease;
 }
 
 .menu {
@@ -614,6 +612,7 @@ html,body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 125%;
+  transition: 2s all ease;
 }
 
 .menu a:hover {
@@ -642,13 +641,13 @@ html,body{
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin-bottom: 5%;
+  padding-left: 2%;
 }
 
 .containerImage {
   width: 90%;
   min-height: 90%;
   max-height: auto;
-  float: left;
   margin: 3px;
   padding: 3px;
 }
@@ -656,8 +655,13 @@ html,body{
 img {
   width: 100%;
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.cv img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projects {
@@ -665,7 +669,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   font-weight: bold;
-  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 .projects p {
@@ -692,6 +696,8 @@ img {
   color: white;
   visibility: hidden;
   opacity: 0;
+  align-items: center;
+  display: flex;
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
@@ -715,12 +721,14 @@ img {
   justify-items: center;
   grid-gap: 15px;
   margin-right: 20px;
-  margin-top: 5%;
+  margin-top: 25%;
 }
 
 .containerSkills {
-  max-width: 100%;
-  height: 100%;
+  max-width: 60%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 figure {
@@ -790,5 +798,66 @@ figcaption {
 }
 
 .footer {
-  margin-top: 20%;
+  background-color: #273043;
+}
+
+@media all and (max-width: 954px) {
+  .texte {
+    color:yellow;
+  }
+
+  .home {
+    padding-top: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cv {
+    scroll-snap-align: end;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin-top: 20%;
+  }
+
+  .titre {
+    transition: 2s all ease;
+    font-size: large;
+  }
+
+  .sous-titre {
+    transition: 2s all ease;
+    font-size: large;
+  }
+
+  .menu a {
+    transition: 2s all ease;
+    font-size: larger;
+  }
+
+  .skills {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-row-gap: 5%;
+    scroll-snap-align: none;
+  }
+
+  .img_wrap {
+    scroll-snap-align: center;
+  }
+
+  #armando{
+    scroll-snap-align: center;
+    margin-top: 100%;
+  }
 }
