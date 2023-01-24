@@ -107,6 +107,7 @@ p {
 .justify {
     display: flex;
     justify-content: center;
+    margin: 5%;
 }
 
 .home {
@@ -200,6 +201,12 @@ img {
     max-width: 60%;
     height: 60%;
     object-fit: contain;
+    transition: 0.5s all ease;
+}
+
+.containerSkills:hover {
+    transform: scale(1.5);
+    transition: 0.5s all ease;
 }
 
 figure {
@@ -361,16 +368,12 @@ figcaption {
         grid-template-columns: 1fr;
     }
 
-    #about {
-        padding-bottom: 20%;
-
-    }
-
     .cv {
         scroll-snap-align: end;
-        max-width: 90vw;
-        max-height: 90vh;
+        max-width: 80vw;
+        max-height: 80vh;
         margin-top: 20%;
+        padding-top: 10%;
     }
 
     .menu a {
@@ -384,27 +387,23 @@ figcaption {
     }
 
     .about {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: 1fr;
+        display: block;
     }
 
     .projects {
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 5%;
         scroll-snap-align: none;
+        display: block;
     }
 
-    .img_wrap {
-        scroll-snap-align: center;
+    .img_description {
+        scroll-snap-align: start;
+        
     }
 
     #armando{
-        margin-top: 100%;
-        padding-top: 25%;
-        padding-bottom: 20%;
         font-size: 100% !important;
-        scroll-snap-align: start;
+        margin: 2%;
+        scroll-snap-align: none;
     }
 
     .skills {
@@ -421,15 +420,26 @@ figcaption {
         max-height: 90vh;
         max-width: 50%;
         justify-self: center;
+        display: none;
     }
 
     #texteImage {
-        margin-top: 10%;
+        padding-top: 20%;
+        margin-top: 20%;
     }
 
     #texteSkills {
         font-size: 100% !important;
         padding-top: 15%;
     }
+
+    #snaps {
+        scroll-snap-align: none;
+    }
+
+    #idProjects {
+        padding-top: 25%;
+    }
+
 
 }
