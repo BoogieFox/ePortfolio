@@ -59,14 +59,14 @@ p {
     color: white;
     font-size: 250%;
     padding-left: 5%;
-    transition: 2s all ease;
+    transition: 0.5s all ease;
 }
 
 .sous-titre {
     color:#04AA6D;
     font-size: 200%;
     padding-left: 10%;
-    transition: 2s all ease;
+    transition: 0.5s all ease;
 }
 
 .menu {
@@ -194,7 +194,7 @@ img {
     grid-gap: 15px;
     margin-right: 20px;
     margin-top: 25%;
-    transition: 2s all ease;
+    transition: 0.5s all ease;
 }
 
 .containerSkills {
@@ -280,7 +280,7 @@ figcaption {
 @media all and (max-width: 954px) {
     .texte {
         font-size: 120% !important;
-        transition: 2s all ease;
+        transition: 0.5s all ease;
     }
 
     .home {
@@ -298,17 +298,17 @@ figcaption {
     }
 
     .titre {
-        transition: 2s all ease;
+        transition: 0.5s all ease;
         font-size: large;
     }
 
     .sous-titre {
-        transition: 2s all ease;
+        transition: 0.5s all ease;
         font-size: large;
     }
 
     .menu a {
-        transition: 2s all ease;
+        transition: 0.5s all ease;
         font-size: larger;
     }
 
@@ -339,7 +339,7 @@ figcaption {
     }
 
     .skills {
-        transition: 2s all ease;
+        transition: 0.5s all ease;
         display: none;
     }
 
@@ -348,8 +348,8 @@ figcaption {
     }
 
     .containerImageIUT {
-        max-width: 90vw;
-        max-height: 90vh;
+        max-width: 50vw;
+        max-height: 50vh;
         max-width: 50%;
         justify-self: center;
     }
@@ -377,7 +377,7 @@ figcaption {
     }
 
     .menu a {
-        transition: 2s all ease;
+        transition: 0.5s all ease;
         font-size: small;
     }
 
@@ -407,7 +407,7 @@ figcaption {
     }
 
     .skills {
-        transition: 2s all ease;
+        transition: 0.5s all ease;
         display: none;
     }
 

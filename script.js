@@ -1,9 +1,6 @@
 var num=100;
 
 $(document).ready(function () {
-
-
-
         $("#imgHTML").on('mouseover',function() {
             $("#textHTML").addClass('bold');
         });
